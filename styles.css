@@ -5,6 +5,7 @@
   --ink-soft: #3a382f;
   --vermillion: #c0412d;
   --indigo: #213a63;
+  --indigo-deep: #182947;
   --bronze: #a87a2e;
   --line: #231f16;
   --max-width: 1120px;
@@ -282,6 +283,121 @@ h2 {
   color: var(--ink-soft);
 }
 
+.artist-study {
+  border-top: 2px solid var(--line);
+  border-bottom: 2px solid var(--line);
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem;
+  background:
+    radial-gradient(circle at 12% 22%, rgba(255, 214, 142, 0.32), transparent 46%),
+    linear-gradient(145deg, rgba(21, 42, 74, 0.91), rgba(31, 57, 92, 0.9));
+  color: #f7efd9;
+}
+
+.artist-study .kicker {
+  color: #f0bf67;
+}
+
+.artist-study h2 {
+  color: #fff4dd;
+}
+
+.study-intro {
+  margin: 0 0 1.4rem;
+  max-width: 56ch;
+  color: #f0e4c8;
+}
+
+.artist-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.artist-card {
+  position: relative;
+  border: 2px solid rgba(246, 232, 200, 0.86);
+  border-radius: var(--radius);
+  background: linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+  padding: 1rem 1rem 1.05rem;
+  overflow: hidden;
+}
+
+.artist-card::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -54px;
+  width: 130px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 247, 223, 0.52);
+}
+
+.artist-era {
+  margin: 0;
+  display: inline-block;
+  padding: 0.2rem 0.42rem;
+  border: 1px solid rgba(255, 245, 218, 0.72);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.artist-card h3 {
+  margin: 0.64rem 0 0.34rem;
+  font-size: 1.42rem;
+}
+
+.artist-work {
+  margin: 0 0 0.55rem;
+  color: #f8dba6;
+  font-weight: 700;
+}
+
+.artist-card p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #faebc9;
+}
+
+.artist-kamekura {
+  background-image:
+    linear-gradient(110deg, rgba(220, 94, 72, 0.24), transparent 48%),
+    linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+}
+
+.artist-tanaka {
+  background-image:
+    linear-gradient(140deg, rgba(252, 173, 67, 0.18), transparent 45%),
+    linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+}
+
+.artist-yokoo {
+  background-image:
+    linear-gradient(140deg, rgba(208, 74, 68, 0.24), rgba(43, 77, 130, 0.18)),
+    linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+}
+
+.artist-awazu {
+  background-image:
+    linear-gradient(145deg, rgba(243, 189, 92, 0.18), rgba(193, 113, 67, 0.2)),
+    linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+}
+
+.artist-ishioka {
+  background-image:
+    linear-gradient(145deg, rgba(187, 73, 52, 0.26), rgba(101, 32, 31, 0.14)),
+    linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+}
+
+.artist-network {
+  background-image:
+    linear-gradient(140deg, rgba(80, 125, 181, 0.24), rgba(235, 172, 80, 0.16)),
+    linear-gradient(140deg, rgba(255, 248, 232, 0.08), rgba(255, 241, 208, 0.04));
+}
+
 .poster-grid {
   display: grid;
   gap: 1rem;
@@ -330,19 +446,27 @@ h2 {
 }
 
 .poster-a {
-  background: linear-gradient(160deg, #f2c568, #e7a741);
+  background:
+    radial-gradient(circle at 24% 20%, rgba(255, 247, 230, 0.55), transparent 34%),
+    linear-gradient(160deg, #d55f4b, #efb968);
 }
 
 .poster-b {
-  background: linear-gradient(160deg, #f0e4c4, #d4c1a0);
+  background:
+    radial-gradient(circle at 86% 22%, rgba(255, 246, 216, 0.44), transparent 30%),
+    linear-gradient(160deg, #f3d98e, #cfb27b);
 }
 
 .poster-c {
-  background: linear-gradient(160deg, #b7ccd8, #7f9fb4);
+  background:
+    radial-gradient(circle at 12% 82%, rgba(250, 223, 163, 0.35), transparent 37%),
+    linear-gradient(160deg, #bb6453, #3f6297);
 }
 
 .poster-d {
-  background: linear-gradient(160deg, #d6b88d, #bc8b54);
+  background:
+    radial-gradient(circle at 78% 18%, rgba(255, 238, 190, 0.44), transparent 36%),
+    linear-gradient(160deg, #c57e4f, #a7423c);
 }
 
 .principles {
@@ -371,6 +495,33 @@ h2 {
 .principle-list p {
   margin: 0;
   color: var(--ink-soft);
+}
+
+.references {
+  padding-bottom: 0.7rem;
+}
+
+.source-list {
+  margin: 0;
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 0.82rem;
+}
+
+.source-list li {
+  padding-left: 0.15rem;
+}
+
+.source-list a {
+  color: var(--indigo-deep);
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.source-list a:hover,
+.source-list a:focus-visible {
+  color: var(--vermillion);
 }
 
 .visit {
@@ -422,6 +573,10 @@ h2 {
 
 @media (max-width: 1024px) {
   .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .artist-grid {
     grid-template-columns: 1fr;
   }
 
