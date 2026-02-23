@@ -3,382 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Showa Canvas | 60s-70s Japan Inspired Web Experience</title>
+    <title>Showa Spectrum | Experimental Japanese Design Experience</title>
     <meta
       name="description"
-      content="A crafted web experience inspired by 1960s-1970s Japanese graphic culture, architecture, and editorial design."
+      content="A high-concept web experience inspired by 1960s-1970s Japanese graphic design masters, blending archival references with advanced UI interactions."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="paper-grain" aria-hidden="true"></div>
-    <header class="hero" id="top">
-      <nav class="top-nav">
-        <a class="brand" href="#top">
-          <span class="brand-mark">SC</span>
-          <span class="brand-name">Showa Canvas</span>
-        </a>
-        <div class="nav-links">
-          <a href="#story">Story</a>
-          <a href="#artists">Artists</a>
-          <a href="#craft">Craft</a>
-          <a href="#principles">Principles</a>
-          <a href="#references">Sources</a>
-          <a href="#visit">Visit</a>
-        </div>
+    <div class="paper-noise" aria-hidden="true"></div>
+    <div class="ink-orbit" aria-hidden="true"></div>
+
+    <header class="site-nav" id="top">
+      <a class="brand" href="#top">
+        <span class="brand-mark">SX</span>
+        <span class="brand-text">Showa Spectrum</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#artists">Artists</a>
+        <a href="#lab">Poster Lab</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#manifesto">Manifesto</a>
+        <a href="#references">References</a>
       </nav>
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Tokyo 1961 -> Osaka 1975</p>
-          <h1>
-            A Digital Stage
-            <span>Built From Real Showa-Era References</span>
-          </h1>
-          <p class="lede">
-            This interface was reworked after studying museum-documented pieces
-            by Yusaku Kamekura, Ikko Tanaka, Tadanori Yokoo, Kiyoshi Awazu, and
-            Eiko Ishioka.
-          </p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#artists">Review Artist Study</a>
-            <a class="btn btn-outline" href="#references">Open Source Shelf</a>
-          </div>
-        </div>
-        <aside class="hero-cards reveal">
-          <article class="stat-card">
-            <h2>Kamekura</h2>
-            <p>Sun-disc restraint, typography discipline, Olympic clarity.</p>
-          </article>
-          <article class="stat-card">
-            <h2>Tanaka</h2>
-            <p>Traditional Japanese aesthetics fused with modern geometry.</p>
-          </article>
-          <article class="stat-card">
-            <h2>Yokoo / Awazu / Ishioka</h2>
-            <p>Collage risk, pop density, and assertive editorial attitude.</p>
-          </article>
-        </aside>
-      </div>
-      <div class="ticker-wrap" aria-label="Design themes">
-        <div class="ticker">
-          <span>Yusaku Kamekura</span>
-          <span>•</span>
-          <span>Ikko Tanaka</span>
-          <span>•</span>
-          <span>Tadanori Yokoo</span>
-          <span>•</span>
-          <span>Kiyoshi Awazu</span>
-          <span>•</span>
-          <span>Eiko Ishioka</span>
-          <span>•</span>
-          <span>Persona 1965</span>
-          <span>•</span>
-          <span>Tokyo 1964</span>
-          <span>•</span>
-          <span>Yusaku Kamekura</span>
-          <span>•</span>
-          <span>Ikko Tanaka</span>
-          <span>•</span>
-          <span>Tadanori Yokoo</span>
-          <span>•</span>
-        </div>
-      </div>
     </header>
 
     <main>
-      <section class="section split" id="story">
-        <div class="section-head reveal">
-          <p class="kicker">Method</p>
-          <h2>From Archive Research To Interface Decisions</h2>
-        </div>
-        <div class="story-grid">
-          <article class="story-block reveal">
-            <h3>Research First</h3>
-            <p>
-              Layout and tone are based on documented posters and museum
-              records, not generic "retro Japan" moodboards.
-            </p>
-          </article>
-          <article class="story-block reveal">
-            <h3>Extract Visual DNA</h3>
-            <p>
-              We mapped recurring traits: disciplined grids, high-contrast
-              color, symbolic forms, and provocative collage strategies.
-            </p>
-          </article>
-          <article class="story-block reveal">
-            <h3>Translate To UX</h3>
-            <p>
-              Navigation, card rhythm, component hierarchy, and motion all use
-              those references while staying usable on mobile and desktop.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section artist-study" id="artists">
-        <div class="section-head reveal">
-          <p class="kicker">Artist Study</p>
-          <h2>1960s-1970s Japanese Design Works Reviewed</h2>
-        </div>
-        <p class="study-intro reveal">
-          Each card links a historical work to a concrete UI move used in this
-          site.
-        </p>
-        <div class="artist-grid">
-          <article class="artist-card reveal artist-kamekura">
-            <p class="artist-era">1961-1963</p>
-            <h3>Yusaku Kamekura</h3>
-            <p class="artist-work">
-              Tokyo 1964 official posters and photogravure execution.
-            </p>
-            <p>
-              Interface impact: strict alignment, forceful empty space, and
-              strong emblematic framing in hero and navigation.
-            </p>
-          </article>
-          <article class="artist-card reveal artist-tanaka">
-            <p class="artist-era">1960-1975</p>
-            <h3>Ikko Tanaka</h3>
-            <p class="artist-work">
-              Early anti-violence posters and postwar modern-tradition fusion.
-            </p>
-            <p>
-              Interface impact: geometric typographic rhythm and restrained
-              visual hierarchy with cultural formality.
-            </p>
-          </article>
-          <article class="artist-card reveal artist-yokoo">
-            <p class="artist-era">1965+</p>
-            <h3>Tadanori Yokoo</h3>
-            <p class="artist-work">
-              Persona-era poster language with rising-sun and collage shocks.
-            </p>
-            <p>
-              Interface impact: controlled bursts of dense color, symbolic
-              badges, and bold narrative sectioning.
-            </p>
-          </article>
-          <article class="artist-card reveal artist-awazu">
-            <p class="artist-era">1970-1973</p>
-            <h3>Kiyoshi Awazu</h3>
-            <p class="artist-work">
-              Metabolism-linked posters and anti-functionalist pop geometry.
-            </p>
-            <p>
-              Interface impact: layered shapes, cross-disciplinary texture, and
-              expressive graphic surfaces in module blocks.
-            </p>
-          </article>
-          <article class="artist-card reveal artist-ishioka">
-            <p class="artist-era">1970s</p>
-            <h3>Eiko Ishioka</h3>
-            <p class="artist-work">
-              Parco campaigns that challenged norms and visual stereotypes.
-            </p>
-            <p>
-              Interface impact: assertive copy tone, high-contrast callouts, and
-              editorial framing that favors stance over decoration.
-            </p>
-          </article>
-          <article class="artist-card reveal artist-network">
-            <p class="artist-era">1960s scene</p>
-            <h3>Network Effect</h3>
-            <p class="artist-work">
-              Ginza creative circles and Persona-driven illustrator culture.
-            </p>
-            <p>
-              Interface impact: modular yet mixed visual language, balancing
-              modernist order with expressive cultural variety.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="craft">
-        <div class="section-head reveal">
-          <p class="kicker">Translation</p>
-          <h2>Reference-Informed Component Boards</h2>
-        </div>
-        <div class="poster-grid">
-          <article class="poster reveal poster-a">
-            <p class="poster-tag">Kamekura</p>
-            <h3>Sun Disc Discipline</h3>
-            <p>Minimal emblem framing and strong typographic baseline logic.</p>
-          </article>
-          <article class="poster reveal poster-b">
-            <p class="poster-tag">Tanaka</p>
-            <h3>Rimpa Geometry</h3>
-            <p>Traditional cadence translated through clean geometric systems.</p>
-          </article>
-          <article class="poster reveal poster-c">
-            <p class="poster-tag">Yokoo</p>
-            <h3>Persona Shock</h3>
-            <p>Collage tension and symbolic overload in controlled doses.</p>
-          </article>
-          <article class="poster reveal poster-d">
-            <p class="poster-tag">Awazu + Ishioka</p>
-            <h3>Pop Metabolism</h3>
-            <p>Layered pop forms with assertive campaign-style messaging.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section principles" id="principles">
-        <div class="section-head reveal">
-          <p class="kicker">UX Notes</p>
-          <h2>How Historical Style Was Kept Usable</h2>
-        </div>
-        <ul class="principle-list">
-          <li class="reveal">
-            <h3>Reference, Then Reduction</h3>
-            <p>
-              Complex poster motifs were reduced to reusable interface grammar.
-            </p>
-          </li>
-          <li class="reveal">
-            <h3>Motion As Tempo</h3>
-            <p>
-              Staggered reveal timing echoes print-sequence pacing, not gimmicks.
-            </p>
-          </li>
-          <li class="reveal">
-            <h3>Legibility Priority</h3>
-            <p>
-              The grid compresses cleanly so historical references never damage
-              readability on small screens.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section references" id="references">
-        <div class="section-head reveal">
-          <p class="kicker">Sources</p>
-          <h2>Museum And Archive References Used</h2>
-        </div>
-        <ol class="source-list reveal">
-          <li>
-            <a
-              href="https://www.britishmuseum.org/collection/object/A_2009-3026-3"
-              target="_blank"
-              rel="noreferrer"
-              >British Museum: Tokyo 1964 butterfly swimmer poster record</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.moma.org/collection/works/8780"
-              target="_blank"
-              rel="noreferrer"
-              >MoMA: Yusaku Kamekura, Tokyo 1964 (1962)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.moma.org/collection/works/82808"
-              target="_blank"
-              rel="noreferrer"
-              >MoMA: Ikko Tanaka, Let&apos;s Take Away Violence from Our Streets
-              (1960)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.moma.org/artists/5800-ikko-tanaka"
-              target="_blank"
-              rel="noreferrer"
-              >MoMA: Ikko Tanaka artist timeline and work list</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.sfmoma.org/artist/Tadanori_Yokoo/"
-              target="_blank"
-              rel="noreferrer"
-              >SFMOMA: Tadanori Yokoo biography and 1965 Persona context</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.moma.org/collection/works/7953"
-              target="_blank"
-              rel="noreferrer"
-              >MoMA: Tadanori Yokoo, Made in Japan... (1965)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.mplus.org.hk/en/collection/objects/poster-the-work-of-kisho-kurokawa-capsule-metabolism-spaceframe-metamorphose-2016727/"
-              target="_blank"
-              rel="noreferrer"
-              >M+: Awazu Kiyoshi Metabolism poster analysis (1970)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.moma.org/collection/works/5858"
-              target="_blank"
-              rel="noreferrer"
-              >MoMA: Kiyoshi Awazu, Osai-Gonza theatrical poster (1973)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.cooperhewitt.org/2014/03/17/the-theater-very-parco/"
-              target="_blank"
-              rel="noreferrer"
-              >Cooper Hewitt: Eiko Ishioka and Parco campaign context</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.moma.org/collection/works/69989"
-              target="_blank"
-              rel="noreferrer"
-              >MoMA: Eiko Ishioka, Power Now (1970)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.dnpfcp.jp/gallery/ggg/eng/16"
-              target="_blank"
-              rel="noreferrer"
-              >ggg archive: 1960s Ginza and Persona-era illustration shift</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.global.dnp/zh-CHS/corporate/culture/column1/index.html"
-              target="_blank"
-              rel="noreferrer"
-              >DNP cultural column: Nagai and Kamekura in NDC (1960)</a
-            >
-          </li>
-        </ol>
-      </section>
-
-      <section class="section visit" id="visit">
-        <div class="visit-card reveal">
-          <p class="kicker">Launch</p>
-          <h2>Live On GitHub Pages</h2>
-          <p>
-            This revision is deployment-ready with automatic publishing from the
-            <code>main</code> branch, including the artist research shelf above.
+      <section class="scene hero" id="hero">
+        <div class="hero-copy reveal">
+          <p class="kicker">1960-1979 / Tokyo / Osaka / Ginza</p>
+          <h1>
+            Not an intro page.
+            <span>A full visual performance.</span>
+          </h1>
+          <p class="hero-lede">
+            This site is built as a living design system: archival research,
+            interactive composition tools, kinetic typography, and timeline-driven
+            narrative inspired by Kamekura, Tanaka, Yokoo, Awazu, and Ishioka.
           </p>
-          <a class="btn btn-primary" href="#top">Back To Top</a>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#lab">Open Poster Lab</a>
+            <a class="btn btn-outline" href="#artists">Enter Artist Explorer</a>
+          </div>
         </div>
+
+        <aside class="hero-stage reveal" aria-label="Animated composition">
+          <div class="stage-core"></div>
+          <div class="stage-ring stage-ring-a"></div>
+          <div class="stage-ring stage-ring-b"></div>
+          <div class="stage-ring stage-ring-c"></div>
+          <div class="stage-track stage-track-a"></div>
+          <div class="stage-track stage-track-b"></div>
+          <div class="stage-label stage-label-a">TOKYO 1964</div>
+          <div class="stage-label stage-label-b">PERSONA 1965</div>
+          <div class="stage-label stage-label-c">OSAKA 1970</div>
+        </aside>
+      </section>
+
+      <section class="scene artists" id="artists">
+        <div class="section-head reveal">
+          <p class="kicker">Artist Explorer</p>
+          <h2>Tap Through The Masters, See The UI Translation</h2>
+        </div>
+
+        <div class="artist-explorer">
+          <div class="artist-list reveal" role="tablist" aria-label="Artist selector">
+            <button class="artist-trigger is-active" data-artist="kamekura" role="tab" aria-selected="true">
+              Yusaku Kamekura
+            </button>
+            <button class="artist-trigger" data-artist="tanaka" role="tab" aria-selected="false">
+              Ikko Tanaka
+            </button>
+            <button class="artist-trigger" data-artist="yokoo" role="tab" aria-selected="false">
+              Tadanori Yokoo
+            </button>
+            <button class="artist-trigger" data-artist="awazu" role="tab" aria-selected="false">
+              Kiyoshi Awazu
+            </button>
+            <button class="artist-trigger" data-artist="ishioka" role="tab" aria-selected="false">
+              Eiko Ishioka
+            </button>
+          </div>
+
+          <article class="artist-detail reveal" id="artistDetail" aria-live="polite">
+            <p class="detail-era" id="artistEra"></p>
+            <h3 id="artistName"></h3>
+            <p class="detail-work" id="artistWork"></p>
+            <p class="detail-text" id="artistText"></p>
+            <ul class="detail-signals" id="artistSignals"></ul>
+            <a class="detail-link" id="artistLink" href="#" target="_blank" rel="noreferrer">
+              Open archive source
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene lab" id="lab">
+        <div class="section-head reveal">
+          <p class="kicker">Interactive System</p>
+          <h2>Poster Lab: Generate Showa-Style Compositions Live</h2>
+        </div>
+
+        <div class="lab-shell">
+          <form class="control-panel reveal" id="controlPanel">
+            <h3>Art Direction Controls</h3>
+
+            <label for="paletteSelect">Palette Mode</label>
+            <select id="paletteSelect" name="palette">
+              <option value="kamekura">Kamekura Discipline</option>
+              <option value="tanaka">Tanaka Geometry</option>
+              <option value="yokoo">Yokoo Collage Heat</option>
+              <option value="awazu">Awazu Pop Metabolism</option>
+              <option value="ishioka">Ishioka Editorial Shock</option>
+            </select>
+
+            <label for="densityRange">Shape Density</label>
+            <input type="range" id="densityRange" name="density" min="4" max="24" value="14" />
+            <p class="control-note" id="densityValue">14 layers</p>
+
+            <label for="gridMode">Layout Logic</label>
+            <select id="gridMode" name="gridMode">
+              <option value="strict">Strict Grid</option>
+              <option value="hybrid">Hybrid Grid</option>
+              <option value="chaos">Expressive Chaos</option>
+            </select>
+
+            <label class="switch" for="motionToggle">
+              <input type="checkbox" id="motionToggle" checked />
+              <span>Enable kinetic motion</span>
+            </label>
+
+            <button type="button" class="btn btn-solid" id="regenerateBtn">Regenerate Composition</button>
+          </form>
+
+          <div class="lab-output reveal">
+            <div class="output-header">
+              <p class="output-title">Generated Board</p>
+              <p class="output-meta" id="outputMeta">Kamekura Discipline / 14 layers / Strict Grid</p>
+            </div>
+            <div class="poster-output" id="posterOutput" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene timeline" id="timeline">
+        <div class="section-head reveal">
+          <p class="kicker">Timeline Scrubber</p>
+          <h2>Slide Across Decades Of Visual Transformation</h2>
+        </div>
+
+        <div class="timeline-shell reveal">
+          <label for="timelineRange" class="timeline-label">Move through key moments</label>
+          <input type="range" id="timelineRange" min="0" max="8" value="0" />
+
+          <article class="timeline-feature" aria-live="polite">
+            <p class="timeline-year" id="timelineYear"></p>
+            <h3 id="timelineTitle"></h3>
+            <p id="timelineText"></p>
+          </article>
+
+          <div class="timeline-rail" id="timelineRail"></div>
+        </div>
+      </section>
+
+      <section class="scene manifesto" id="manifesto">
+        <div class="section-head reveal">
+          <p class="kicker">Creative Standard</p>
+          <h2>Five Rules Behind This Build</h2>
+        </div>
+
+        <div class="manifesto-grid">
+          <article class="manifesto-card reveal">
+            <h3>01 Archive Integrity</h3>
+            <p>
+              Every visual direction must map to a verifiable historical source,
+              not trend imitation.
+            </p>
+          </article>
+          <article class="manifesto-card reveal">
+            <h3>02 Intentional Excess</h3>
+            <p>
+              Richness is allowed only when hierarchy remains clear and reading
+              order stays effortless.
+            </p>
+          </article>
+          <article class="manifesto-card reveal">
+            <h3>03 System, Not Decoration</h3>
+            <p>
+              Components are reusable, parameterized, and behavior-driven from
+              controls to rendering.
+            </p>
+          </article>
+          <article class="manifesto-card reveal">
+            <h3>04 Responsive Rhythm</h3>
+            <p>
+              Mobile collapses preserve drama through scale, spacing, and contrast
+              without breaking usability.
+            </p>
+          </article>
+          <article class="manifesto-card reveal">
+            <h3>05 Motion With Purpose</h3>
+            <p>
+              Animation acts as pacing and orientation, not ambient distraction.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene references" id="references">
+        <div class="section-head reveal">
+          <p class="kicker">Reference Shelf</p>
+          <h2>Primary Sources Behind The Visual Language</h2>
+        </div>
+
+        <ol class="source-list reveal">
+          <li><a href="https://www.moma.org/collection/works/8780" target="_blank" rel="noreferrer">MoMA: Yusaku Kamekura, Tokyo 1964 (1962)</a></li>
+          <li><a href="https://www.britishmuseum.org/collection/object/A_2009-3026-3" target="_blank" rel="noreferrer">British Museum: Tokyo 1964 butterfly swimmer poster</a></li>
+          <li><a href="https://www.moma.org/collection/works/82808" target="_blank" rel="noreferrer">MoMA: Ikko Tanaka, Let&apos;s Take Away Violence from Our Streets (1960)</a></li>
+          <li><a href="https://www.sfmoma.org/artist/Tadanori_Yokoo/" target="_blank" rel="noreferrer">SFMOMA: Tadanori Yokoo biography and Persona-era context</a></li>
+          <li><a href="https://www.moma.org/collection/works/7953" target="_blank" rel="noreferrer">MoMA: Tadanori Yokoo, Made in Japan... (1965)</a></li>
+          <li><a href="https://www.mplus.org.hk/en/collection/objects/poster-the-work-of-kisho-kurokawa-capsule-metabolism-spaceframe-metamorphose-2016727/" target="_blank" rel="noreferrer">M+: Awazu Kiyoshi and Metabolism poster culture (1970)</a></li>
+          <li><a href="https://www.moma.org/collection/works/5858" target="_blank" rel="noreferrer">MoMA: Kiyoshi Awazu, Osai-Gonza theatrical poster (1973)</a></li>
+          <li><a href="https://www.cooperhewitt.org/2014/03/17/the-theater-very-parco/" target="_blank" rel="noreferrer">Cooper Hewitt: Eiko Ishioka and Parco campaign history</a></li>
+          <li><a href="https://www.moma.org/collection/works/69989" target="_blank" rel="noreferrer">MoMA: Eiko Ishioka, Power Now (1970)</a></li>
+        </ol>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Showa Canvas / Grounded in documented 1960s-1970s Japanese design.</p>
+      <p>Showa Spectrum / research-driven visual engineering / deployed on GitHub Pages</p>
     </footer>
 
     <script src="script.js"></script>

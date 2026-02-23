@@ -1,26 +1,32 @@
-# Showa Canvas
+# Showa Spectrum
 
-A static website inspired by 1960s-1970s Japanese design language, including:
+A high-concept web experience inspired by 1960s-1970s Japanese graphic design.
 
-- editorial grid structure
-- Showa-era color palette (vermillion/indigo/paper tones)
-- Japanese-influenced typography pairing
-- responsive UX layout with purposeful motion
+## What this build includes
+
+- Cinematic hero stage with layered geometric motion
+- Interactive artist explorer (Kamekura, Tanaka, Yokoo, Awazu, Ishioka)
+- Generative "Poster Lab" with live controls:
+  - palette mode
+  - shape density
+  - layout logic
+  - motion toggle
+- Timeline scrubber with key moments from 1960-1978
+- Source shelf linking primary museum/archive references
+- Responsive layout optimized for desktop and mobile
 
 ## Local preview
-
-Open `index.html` directly, or run:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Open [http://localhost:8000](http://localhost:8000).
 
 ## Deployment
 
-This repository deploys automatically to GitHub Pages using:
+GitHub Pages deployment is automated through:
 
 - `.github/workflows/deploy-pages.yml`
 
-Every push to `main` triggers a deployment.
+Every push to `main` publishes the latest site.
