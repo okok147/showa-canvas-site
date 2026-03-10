@@ -73,6 +73,8 @@
         </div>
 
         <aside class="hero-stage reveal" aria-label="Animated composition">
+          <canvas id="heroThreeCanvas" class="hero-three-canvas" aria-hidden="true"></canvas>
+
           <div class="stage-patch patch-a"></div>
           <div class="stage-patch patch-b"></div>
           <div class="stage-patch patch-c"></div>
@@ -90,6 +92,7 @@
           <div class="stage-label stage-label-a">PATCHWORK</div>
           <div class="stage-label stage-label-b">DOODLE ENERGY</div>
           <div class="stage-label stage-label-c">TEXTURED COLOR</div>
+          <div class="stage-label stage-label-d">THREE.JS LIVE</div>
         </aside>
       </section>
 
@@ -161,12 +164,20 @@
               <option value="chaos">Wild Doodle Burst</option>
             </select>
 
+            <label for="threeMode">3D Motion Mode</label>
+            <select id="threeMode" name="threeMode">
+              <option value="orbit">Orbit Bloom</option>
+              <option value="pulse">Pulse Wave</option>
+              <option value="nova">Nova Storm</option>
+            </select>
+
             <label class="switch" for="motionToggle">
               <input type="checkbox" id="motionToggle" checked />
               <span>Enable floating motion</span>
             </label>
 
             <button type="button" class="btn btn-solid" id="regenerateBtn">Regenerate Artwork</button>
+            <button type="button" class="btn btn-outline btn-utility" id="threeResetBtn">Recenter 3D Camera</button>
           </form>
 
           <div class="lab-output reveal">

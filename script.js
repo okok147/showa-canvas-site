@@ -163,8 +163,10 @@ const paletteSelect = document.getElementById("paletteSelect");
 const densityRange = document.getElementById("densityRange");
 const densityValue = document.getElementById("densityValue");
 const gridMode = document.getElementById("gridMode");
+const threeMode = document.getElementById("threeMode");
 const motionToggle = document.getElementById("motionToggle");
 const regenerateBtn = document.getElementById("regenerateBtn");
+const threeResetBtn = document.getElementById("threeResetBtn");
 const posterOutput = document.getElementById("posterOutput");
 const outputMeta = document.getElementById("outputMeta");
 
@@ -175,8 +177,10 @@ const timelineText = document.getElementById("timelineText");
 const timelineRail = document.getElementById("timelineRail");
 
 const heroStage = document.querySelector(".hero-stage");
+const heroThreeCanvas = document.getElementById("heroThreeCanvas");
 
 let posterSeedOffset = 0;
+let threeSceneController = null;
 
 function hashString(value) {
   let hash = 2166136261;
@@ -329,6 +333,48 @@ function addPosterStamps(rng) {
   posterOutput.appendChild(stampB);
 }
 
+function getThreeModeLabel(mode) {
+  if (mode === "pulse") {
+    return "Pulse Wave";
+  }
+
+  if (mode === "nova") {
+    return "Nova Storm";
+  }
+
+  return "Orbit Bloom";
+}
+
+function getThreeSceneConfig() {
+  const paletteKey = paletteSelect?.value ?? "kamekura";
+  const palette = palettes[paletteKey] ?? palettes.kamekura;
+
+  return {
+    palette: palette.accents,
+    density: Number.parseInt(densityRange?.value ?? "16", 10),
+    gridMode: gridMode?.value ?? "strict",
+    motionEnabled: motionToggle?.checked ?? true,
+    threeMode: threeMode?.value ?? "orbit",
+  };
+}
+
+async function setupThreeScene() {
+  if (!heroThreeCanvas) {
+    return;
+  }
+
+  try {
+    const { createShowaThreeScene } = await import("./three-scene.js");
+    threeSceneController = createShowaThreeScene({
+      canvas: heroThreeCanvas,
+      getConfig: getThreeSceneConfig,
+    });
+  } catch (error) {
+    console.error("Three.js scene setup failed.", error);
+    heroThreeCanvas.remove();
+  }
+}
+
 function generatePoster() {
   const paletteKey = paletteSelect.value;
   const palette = palettes[paletteKey];
@@ -347,8 +393,9 @@ function generatePoster() {
       : mode === "hybrid"
         ? "Balanced Chaos"
         : "Wild Doodle Burst";
+  const threeLabel = getThreeModeLabel(threeMode?.value ?? "orbit");
 
-  outputMeta.textContent = `${palette.label} / ${density} layers / ${modeLabel}`;
+  outputMeta.textContent = `${palette.label} / ${density} layers / ${modeLabel} / ${threeLabel}`;
 
   posterOutput.innerHTML = "";
   posterOutput.style.background = palette.background;
@@ -535,7 +582,11 @@ artistButtons.forEach((button) => {
   });
 });
 
-[paletteSelect, densityRange, gridMode, motionToggle].forEach((control) => {
+[paletteSelect, densityRange, gridMode, threeMode, motionToggle].forEach((control) => {
+  if (!control) {
+    return;
+  }
+
   control.addEventListener("input", generatePoster);
   control.addEventListener("change", generatePoster);
 });
@@ -545,6 +596,14 @@ regenerateBtn.addEventListener("click", () => {
   generatePoster();
 });
 
+if (threeResetBtn) {
+  threeResetBtn.addEventListener("click", () => {
+    if (threeSceneController && typeof threeSceneController.resetCamera === "function") {
+      threeSceneController.resetCamera();
+    }
+  });
+}
+
 timelineRange.max = String(timelineEvents.length - 1);
 timelineRange.addEventListener("input", () => {
   renderTimeline(Number.parseInt(timelineRange.value, 10));
@@ -553,6 +612,13 @@ timelineRange.addEventListener("input", () => {
 setupReveals();
 setupSectionTracking();
 setupHeroParallax();
+setupThreeScene();
+
+window.addEventListener("pagehide", () => {
+  if (threeSceneController && typeof threeSceneController.dispose === "function") {
+    threeSceneController.dispose();
+  }
+});
 
 setArtistSelection("kamekura");
 buildTimelineRail();

@@ -388,6 +388,12 @@ h2 {
   background: linear-gradient(160deg, #fff1d7, #f8e2b8);
 }
 
+.btn-utility {
+  min-height: 2.55rem;
+  font-size: 0.88rem;
+  background: linear-gradient(160deg, #f0f8ff, #d4ecff);
+}
+
 .hero-stickers {
   margin-top: 1.2rem;
   display: flex;
@@ -418,9 +424,21 @@ h2 {
   transition: transform 200ms ease;
 }
 
+.hero-three-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 2;
+}
+
 .stage-patch {
   position: absolute;
   border: 2px solid rgba(45, 28, 20, 0.8);
+  z-index: 1;
+  opacity: 0.74;
+  mix-blend-mode: multiply;
 }
 
 .patch-a {
@@ -460,14 +478,14 @@ h2 {
   border-radius: 52% 48% 54% 46% / 38% 56% 44% 62%;
   background: radial-gradient(circle at 34% 30%, #fff0ce, #ff6534 58%, #b94a25 100%);
   border: 3px solid rgba(43, 26, 18, 0.92);
-  z-index: 2;
+  z-index: 4;
 }
 
 .stage-ring {
   position: absolute;
   border: 3px dashed rgba(255, 248, 235, 0.9);
   border-radius: 50%;
-  z-index: 2;
+  z-index: 4;
   animation: spin 16s linear infinite;
 }
 
@@ -489,7 +507,7 @@ h2 {
 
 .stage-icon {
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   border: 2px solid var(--ink);
   background: #fff4dd;
 }
@@ -550,7 +568,7 @@ h2 {
 
 .stage-label {
   position: absolute;
-  z-index: 4;
+  z-index: 6;
   border: 2px solid var(--ink);
   border-radius: 999px;
   padding: 0.14rem 0.52rem;
@@ -572,6 +590,13 @@ h2 {
 .stage-label-c {
   left: 8%;
   bottom: 10%;
+}
+
+.stage-label-d {
+  right: 9%;
+  top: 10%;
+  color: #fff7e8;
+  background: linear-gradient(155deg, #2d1c14, #573524);
 }
 
 .artist-explorer {
@@ -709,6 +734,10 @@ h2 {
     radial-gradient(circle at 90% 88%, rgba(255, 102, 212, 0.22), transparent 38%),
     linear-gradient(146deg, #f9efd8, #f0dcb8);
   box-shadow: var(--shadow);
+}
+
+.control-panel .btn {
+  width: 100%;
 }
 
 .control-panel h3 {
