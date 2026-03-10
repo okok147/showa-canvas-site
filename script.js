@@ -1,149 +1,246 @@
 const artistData = {
   kamekura: {
-    era: "1957-1964 / Olympic-era precision",
+    era: "1950s-1964 / Olympic modernism",
     name: "Yusaku Kamekura",
-    work: "Tokyo 1964 visual identity discipline",
-    text: "Kamekura's controlled symbolism guides the structural layer of this UI. Even with playful visuals, alignment, spacing, and focal hierarchy remain strict.",
+    work: "Tokyo 1964 identity and poster discipline",
+    cardCopy: "Emblem logic, void, exact alignment, and public-facing clarity.",
+    text: "Kamekura compressed national scale into a lucid visual system. His lesson for interface design is that one decisive form, placed with conviction, can organize everything around it.",
     signals: [
-      "Anchor forms around a strong central composition.",
-      "Use negative space as active rhythm, not empty filler.",
-      "Keep labels direct, concise, and legible under high color load.",
+      "Hero compositions should center one unmistakable symbol.",
+      "Whitespace is structural, not decorative.",
+      "Labels and actions stay concise under high visual pressure.",
     ],
+    tags: ["emblem", "void", "discipline"],
     link: "https://www.moma.org/collection/works/8780",
+    paletteKey: "kamekura",
   },
   tanaka: {
-    era: "1960-1975 / modern-traditional fusion",
+    era: "1960s-1970s / tradition through geometry",
     name: "Ikko Tanaka",
-    work: "Geometric reinterpretation of Japanese cultural forms",
-    text: "Tanaka's influence appears in the modular UI rhythm and controlled contrast. Decorative forms are expressive, but they still obey a coherent visual cadence.",
+    work: "Modern systems built from Japanese cultural form",
+    cardCopy: "Measured modules, ritual balance, and formal contrast.",
+    text: "Tanaka showed that traditional cadence can survive translation into sharp modern systems. The UI follows that thinking with repeated modules, controlled asymmetry, and clear ceremonial hierarchy.",
     signals: [
-      "Modular blocks with repeatable spacing ratios.",
-      "Strong color transitions without sacrificing readability.",
-      "Typography pairing that separates expression from utility.",
+      "Spacing should feel measured, not casual.",
+      "Cultural form can become a reusable interface grammar.",
+      "Contrast works best when shape logic stays calm.",
     ],
+    tags: ["rimpa", "module", "cadence"],
     link: "https://www.moma.org/collection/works/82808",
+    paletteKey: "tanaka",
   },
   yokoo: {
-    era: "1965 onward / Persona-era visual shock",
+    era: "1965 onward / poster counterculture",
     name: "Tadanori Yokoo",
-    work: "Collage intensity and symbolic overload",
-    text: "The Behance-inspired illustration language pairs naturally with Yokoo's high-density storytelling. The poster output intentionally allows richer collision while maintaining clear focus points.",
+    work: "Persona-era collage, irony, and symbolic overload",
+    cardCopy: "Collision, heat, narrative density, and theatrical rupture.",
+    text: "Yokoo proved that contradiction can remain legible if the eye is given a route through the noise. In the poster lab, this becomes deliberate density with strong focal anchors.",
     signals: [
-      "Layered motifs for depth and visual surprise.",
-      "Color collisions treated as narrative devices.",
-      "Intentional contrast between order and expressive chaos.",
+      "Use saturation only when the eye still knows where to land.",
+      "Allow symbolic clashes to act as narrative devices.",
+      "Chaos needs a governing rhythm.",
     ],
+    tags: ["collage", "shock", "theater"],
     link: "https://www.moma.org/collection/works/7953",
+    paletteKey: "yokoo",
   },
   awazu: {
-    era: "Late 60s-70s / cross-disciplinary pop graphics",
+    era: "1960s-1970s / theater, architecture, poster culture",
     name: "Kiyoshi Awazu",
-    work: "Posters connected to architecture, theater, and urban culture",
-    text: "Awazu's cross-medium energy informs this refactor's UI texture strategy: symbols, color planes, and hand-drawn accents become interactive components rather than static decoration.",
+    work: "Metabolism-linked graphics and cultural hybridity",
+    cardCopy: "Cross-disciplinary texture, heat, and urban-pop surfaces.",
+    text: "Awazu's work refused to stay inside a single discipline. This redesign borrows that refusal by letting archive, interface, poster, and 3D space behave like one connected system.",
     signals: [
-      "Layered components with distinct visual personalities.",
-      "Patchwork panel logic for section transitions.",
-      "Expressive marks integrated into functional UI surfaces.",
+      "Section transitions should feel like entering a new room.",
+      "Surfaces can mix architecture, theater, and pop graphics.",
+      "Expressive motifs still need reusable rules.",
     ],
+    tags: ["metabolism", "theater", "urban"],
     link: "https://www.mplus.org.hk/en/collection/objects/poster-the-work-of-kisho-kurokawa-capsule-metabolism-spaceframe-metamorphose-2016727/",
+    paletteKey: "awazu",
   },
   ishioka: {
-    era: "1970s / editorial confrontation",
+    era: "1970s / campaign intensity",
     name: "Eiko Ishioka",
-    work: "Campaign-led visual assertiveness",
-    text: "Ishioka's attitude drives the new UX voice: bold headings, unapologetic color, and editorial framing that feels intentional and high-impact.",
+    work: "Parco-era editorial force and confrontational imagery",
+    cardCopy: "Authorial voice, campaign punch, and image-as-statement.",
+    text: "Ishioka's strength was not mere beauty but stance. The site borrows that stance in its assertive headlines, sharp section framing, and refusal to flatten everything into neutral product UI.",
     signals: [
-      "High-contrast emphasis on critical interactions.",
-      "Confident, minimal-copy directional language.",
-      "Background treated as brand narrative, not ornament.",
+      "Copy should sound authored, not generic.",
+      "Callouts deserve the same force as key visuals.",
+      "Commercial surfaces can still challenge the viewer.",
     ],
+    tags: ["campaign", "stance", "editorial"],
     link: "https://www.cooperhewitt.org/2014/03/17/the-theater-very-parco/",
+    paletteKey: "ishioka",
+  },
+  nagai: {
+    era: "1960s-1980s / symbol systems and ecological vision",
+    name: "Kazumasa Nagai",
+    work: "Animal forms, compressed wit, and enduring iconography",
+    cardCopy: "Symbolic animals, concise geometry, and conceptual economy.",
+    text: "Nagai's posters show how a form can be both image and argument. The redesign channels that by making motifs carry meaning instead of acting as filler.",
+    signals: [
+      "Every recurring symbol should encode an idea.",
+      "Color can amplify meaning without bloating composition.",
+      "A single silhouette can carry an entire page.",
+    ],
+    tags: ["ecology", "symbol", "economy"],
+    link: "https://www.mplus.org.hk/en/collection/makers/kazumasa-nagai-5738/",
+    paletteKey: "nagai",
+  },
+  fukuda: {
+    era: "1950s-1980s / visual wit and illusion",
+    name: "Shigeo Fukuda",
+    work: "Optical intelligence, anti-war posters, and smart reduction",
+    cardCopy: "Visual jokes with moral edge and technical sharpness.",
+    text: "Fukuda reminds the interface to think. Surprise is most powerful when it lands as insight, not novelty, which is why the site uses symbolic play without abandoning clarity.",
+    signals: [
+      "Wit belongs inside the system, not on top of it.",
+      "Optical tricks work best with clean structural bones.",
+      "Minimal shapes can still deliver impact.",
+    ],
+    tags: ["illusion", "wit", "reduction"],
+    link: "https://www.moma.org/artists/2009-shigeo-fukuda",
+    paletteKey: "fukuda",
+  },
+  sugiura: {
+    era: "1960s-1980s / editorial cosmology",
+    name: "Kohei Sugiura",
+    work: "Book systems, information worlds, and visual cosmography",
+    cardCopy: "Editorial depth, knowledge mapping, and symbolic structure.",
+    text: "Sugiura expands the archive mentality of the site. Rather than treating sections as isolated screens, the redesign treats them as linked knowledge chambers inside one visual cosmos.",
+    signals: [
+      "Information should feel interconnected, not stacked.",
+      "The archive can be emotional without becoming chaotic.",
+      "Typography can guide thought as much as style.",
+    ],
+    tags: ["editorial", "cosmos", "mapping"],
+    link: "https://www.dnpfcp.jp/gallery/ggg/eng/75/",
+    paletteKey: "sugiura",
   },
 };
 
 const palettes = {
   kamekura: {
-    label: "Candy Patchwork",
-    background: "linear-gradient(145deg, #ffe7bf 0%, #ffd57e 42%, #ff9e4f 100%)",
-    accents: ["#ff6236", "#ff66d4", "#60d6cf", "#6ab9ff", "#d4ff2f"],
-    line: "#2d1c14",
-    caption: "Playful hierarchy with strong focal anchors",
+    label: "Yusaku Kamekura",
+    background: "linear-gradient(145deg, #f7ecd4 0%, #efcf91 44%, #d96c3a 100%)",
+    accents: ["#d8522e", "#234d7b", "#efb449", "#f6ead6", "#1b1712"],
+    line: "#1d1711",
+    panel: "#fff1de",
+    caption: "Emblem precision, disciplined void, and Olympic-scale focus",
+    stamps: ["emblem system", "public clarity"],
   },
   tanaka: {
-    label: "Turquoise Garden",
-    background: "linear-gradient(145deg, #e7f9f6 0%, #94e6e0 42%, #5fcfc8 100%)",
-    accents: ["#2d1c14", "#ff6a3c", "#ffd35f", "#6ab9ff", "#ff66d4"],
-    line: "#2b1a13",
-    caption: "Patterned rhythm and geometric restraint",
+    label: "Ikko Tanaka",
+    background: "linear-gradient(145deg, #f3ead9 0%, #dfc895 42%, #284c74 100%)",
+    accents: ["#c84c2f", "#284c74", "#e3b148", "#f4e6cf", "#1a1714"],
+    line: "#1f1712",
+    panel: "#fff1dc",
+    caption: "Measured cadence, formal balance, and geometric tradition",
+    stamps: ["ritual grid", "formal balance"],
   },
   yokoo: {
-    label: "Hot Pink Voltage",
-    background: "linear-gradient(145deg, #ffd5f3 0%, #ff84df 42%, #ff5fbe 100%)",
-    accents: ["#ff5f3c", "#6ab9ff", "#d4ff2f", "#ffd35f", "#2d1c14"],
-    line: "#331d16",
-    caption: "Collision, symbolism, and visual theater",
+    label: "Tadanori Yokoo",
+    background: "linear-gradient(145deg, #f6d9ea 0%, #ff8ddd 40%, #375da0 100%)",
+    accents: ["#ff5f3e", "#375da0", "#ff6fd6", "#d5ff39", "#231512"],
+    line: "#281611",
+    panel: "#fff0f6",
+    caption: "Poster heat, symbolic overload, and controlled delirium",
+    stamps: ["persona shock", "narrative clash"],
   },
   awazu: {
-    label: "Cocoa Folk Night",
-    background: "linear-gradient(145deg, #f4dec4 0%, #c07a50 44%, #7f482d 100%)",
-    accents: ["#ff7a4a", "#ffd35f", "#60d6cf", "#6ab9ff", "#ff78d8"],
-    line: "#25150f",
-    caption: "Warm texture with layered cultural motifs",
+    label: "Kiyoshi Awazu",
+    background: "linear-gradient(145deg, #efd6b9 0%, #bc7a53 44%, #6c3c2a 100%)",
+    accents: ["#e55a35", "#6c3c2a", "#58c9c0", "#eac15a", "#211410"],
+    line: "#211410",
+    panel: "#fbead6",
+    caption: "Cross-disciplinary surfaces, warm density, and urban theatricality",
+    stamps: ["metabolism", "cultural heat"],
   },
   ishioka: {
-    label: "Blue Myth Frame",
-    background: "linear-gradient(145deg, #d7edff 0%, #80c7ff 45%, #4f8cd9 100%)",
-    accents: ["#ff6538", "#ff66d4", "#d4ff2f", "#ffd35f", "#60d6cf"],
-    line: "#1f1611",
-    caption: "Editorial force with theatrical contrast",
+    label: "Eiko Ishioka",
+    background: "linear-gradient(145deg, #e7f1ff 0%, #74b4ff 42%, #d75a35 100%)",
+    accents: ["#d75a35", "#244270", "#f3c04d", "#f4ecdb", "#1f1410"],
+    line: "#1f1410",
+    panel: "#fff2de",
+    caption: "Campaign power, image-as-stance, and editorial pressure",
+    stamps: ["campaign edge", "authorial voice"],
+  },
+  nagai: {
+    label: "Kazumasa Nagai",
+    background: "linear-gradient(145deg, #eef5d5 0%, #9ac565 44%, #41673a 100%)",
+    accents: ["#5a8a30", "#1f4b3b", "#d46d2e", "#f0eccd", "#151712"],
+    line: "#181812",
+    panel: "#f7f3d9",
+    caption: "Symbolic economy, ecological wit, and living silhouettes",
+    stamps: ["living symbol", "ecological mark"],
+  },
+  fukuda: {
+    label: "Shigeo Fukuda",
+    background: "linear-gradient(145deg, #ece5de 0%, #c7bbb1 42%, #5c5550 100%)",
+    accents: ["#38322f", "#c85d34", "#9ca7d8", "#f0ebe2", "#171412"],
+    line: "#1b1714",
+    panel: "#f8f0e7",
+    caption: "Optical wit, reduction, and intelligence disguised as play",
+    stamps: ["optical wit", "sharp reduction"],
+  },
+  sugiura: {
+    label: "Kohei Sugiura",
+    background: "linear-gradient(145deg, #efe4d8 0%, #d8b788 42%, #515c82 100%)",
+    accents: ["#6d5fa8", "#515c82", "#d88a3f", "#f3eadc", "#171412"],
+    line: "#1a1512",
+    panel: "#f9efe3",
+    caption: "Editorial cosmology, linked knowledge, and deep structure",
+    stamps: ["knowledge map", "editorial cosmos"],
   },
 };
 
 const timelineEvents = [
   {
+    year: 1956,
+    title: "Fukuda Turns Wit Into Graphic Intelligence",
+    text: "The lineage starts with reduction and visual irony, showing how a single image can operate like an argument rather than a decoration.",
+  },
+  {
     year: 1960,
-    title: "Structured Modernism Gains Momentum",
-    text: "Clear geometry and social messaging establish the structural backbone now mirrored in this interface architecture.",
+    title: "Tanaka Makes Formal Systems Feel Cultural",
+    text: "Modernist clarity is fused with Japanese visual tradition, creating a logic that still feels powerful for interface composition.",
   },
   {
-    year: 1961,
-    title: "Identity Systems Become Cultural Events",
-    text: "Design shifted from static poster work to full public communication systems with strict visual consistency.",
-  },
-  {
-    year: 1964,
-    title: "Global Stage, Bold Visual Precision",
-    text: "Tokyo's design language reached worldwide audiences and proved high-impact graphics can remain disciplined.",
+    year: 1962,
+    title: "Kamekura Sets The Olympic Standard",
+    text: "Tokyo 1964 identity work proves that one disciplined emblem can organize an entire public communication system.",
   },
   {
     year: 1965,
-    title: "Collage Counterculture Explodes",
-    text: "Visual narratives grew denser, weirder, and more symbolic, opening space for expressive UI inspiration.",
-  },
-  {
-    year: 1968,
-    title: "Interdisciplinary Creative Networks",
-    text: "Illustrators, art directors, and publishers cross-influenced one another, blending formal and playful vocabularies.",
+    title: "Yokoo Explodes Poster Language",
+    text: "Collage, irony, contradiction, and symbolic overload enter the canon as tools of narrative force instead of visual excess for its own sake.",
   },
   {
     year: 1970,
-    title: "Expo-Era Spectacle and Systems",
-    text: "Large-scale events demanded environments that were immersive, legible, and emotionally charged at once.",
+    title: "Awazu Connects Graphics To Architecture",
+    text: "Posters begin to behave like cultural environments, linking exhibition, theater, publication, and city life into one visual ecology.",
   },
   {
     year: 1972,
-    title: "Campaign Visuals Get Bolder",
-    text: "Commercial design adopted stronger voice and attitude, shaping the assertive UX tone used in this refactor.",
+    title: "Ishioka Pushes Campaign Imagery Into Stance",
+    text: "Commercial surfaces become sharper, bolder, and more authored, which is why this redesign treats every section like an editorial declaration.",
   },
   {
-    year: 1973,
-    title: "Theater, Architecture, Poster Fusion",
-    text: "Cross-medium influence deepened, encouraging layered compositions and mixed visual grammar.",
+    year: 1977,
+    title: "Nagai Refines Symbolic Economy",
+    text: "Image systems become more distilled and ecological, turning silhouettes and animal forms into compact carriers of meaning.",
   },
   {
-    year: 1978,
-    title: "Legacy Becomes Contemporary Toolkit",
-    text: "The era's methods evolved into durable design principles still effective for modern interaction systems.",
+    year: 1980,
+    title: "Sugiura Deepens The Archive Mindset",
+    text: "Editorial design expands into knowledge architecture, influencing how this site links sections into one broader atlas instead of isolated screens.",
+  },
+  {
+    year: 1983,
+    title: "The Canon Becomes A System Library",
+    text: "By the early 1980s, these designers had established a durable toolkit of contrast, symbol, spacing, wit, and motion-ready composition.",
   },
 ];
 
@@ -151,7 +248,9 @@ const revealElements = Array.from(document.querySelectorAll(".reveal"));
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 const sections = Array.from(document.querySelectorAll("main section[id]"));
 
-const artistButtons = Array.from(document.querySelectorAll(".artist-trigger"));
+let artistButtons = [];
+
+const legendGrid = document.getElementById("legendGrid");
 const artistEra = document.getElementById("artistEra");
 const artistName = document.getElementById("artistName");
 const artistWork = document.getElementById("artistWork");
@@ -179,13 +278,15 @@ const timelineRail = document.getElementById("timelineRail");
 const heroStage = document.querySelector(".hero-stage");
 const heroThreeCanvas = document.getElementById("heroThreeCanvas");
 
+const rootStyle = document.documentElement;
+
 let posterSeedOffset = 0;
 let threeSceneController = null;
 
 function hashString(value) {
   let hash = 2166136261;
-  for (let i = 0; i < value.length; i += 1) {
-    hash ^= value.charCodeAt(i);
+  for (let index = 0; index < value.length; index += 1) {
+    hash ^= value.charCodeAt(index);
     hash += (hash << 1) + (hash << 4) + (hash << 7) + (hash << 8) + (hash << 24);
   }
   return hash >>> 0;
@@ -197,6 +298,80 @@ function makeRng(seed) {
     state = (1664525 * state + 1013904223) % 4294967296;
     return state / 4294967296;
   };
+}
+
+function getGridModeLabel(mode) {
+  if (mode === "hybrid") {
+    return "Hybrid Tension";
+  }
+
+  if (mode === "chaos") {
+    return "Psychedelic Collision";
+  }
+
+  return "Constructive Order";
+}
+
+function getThreeModeLabel(mode) {
+  if (mode === "pulse") {
+    return "Signal Pulse";
+  }
+
+  if (mode === "nova") {
+    return "Poster Nova";
+  }
+
+  return "Orbit Monument";
+}
+
+function applyThemeFromPalette(paletteKey) {
+  const palette = palettes[paletteKey] ?? palettes.kamekura;
+  rootStyle.style.setProperty("--theme-primary", palette.accents[0]);
+  rootStyle.style.setProperty("--theme-secondary", palette.accents[1]);
+  rootStyle.style.setProperty("--theme-tertiary", palette.accents[2]);
+  rootStyle.style.setProperty("--theme-highlight", palette.accents[3]);
+  rootStyle.style.setProperty("--theme-panel", palette.panel);
+}
+
+function buildLegendGrid() {
+  if (!legendGrid) {
+    return;
+  }
+
+  legendGrid.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+
+  Object.entries(artistData).forEach(([key, artist]) => {
+    const palette = palettes[artist.paletteKey] ?? palettes.kamekura;
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "legend-card";
+    button.dataset.artist = key;
+    button.setAttribute("role", "tab");
+    button.setAttribute("aria-selected", "false");
+    button.style.setProperty("--card-primary", palette.accents[3]);
+    button.style.setProperty("--card-secondary", palette.accents[0]);
+
+    const tagsMarkup = artist.tags
+      .map((tag) => `<span>${tag}</span>`)
+      .join("");
+
+    button.innerHTML = `
+      <p class="legend-card-year">${artist.era}</p>
+      <h3>${artist.name}</h3>
+      <p class="legend-card-copy">${artist.cardCopy}</p>
+      <div class="legend-card-tags">${tagsMarkup}</div>
+    `;
+
+    button.addEventListener("click", () => {
+      setArtistSelection(key);
+    });
+
+    fragment.appendChild(button);
+  });
+
+  legendGrid.appendChild(fragment);
+  artistButtons = Array.from(legendGrid.querySelectorAll(".legend-card"));
 }
 
 function renderArtist(key) {
@@ -220,7 +395,15 @@ function renderArtist(key) {
   artistLink.href = artist.link;
 }
 
-function setArtistSelection(key) {
+function setArtistSelection(key, options = {}) {
+  const artist = artistData[key];
+  if (!artist) {
+    return;
+  }
+
+  const { syncPalette = true, syncPoster = true } = options;
+  applyThemeFromPalette(artist.paletteKey);
+
   artistButtons.forEach((button) => {
     const isActive = button.dataset.artist === key;
     button.classList.toggle("is-active", isActive);
@@ -228,121 +411,14 @@ function setArtistSelection(key) {
   });
 
   renderArtist(key);
-}
 
-function buildPosterLines(mode, palette, rng) {
-  const lines = [];
-
-  if (mode === "strict") {
-    for (let i = 0; i < 7; i += 1) {
-      lines.push({
-        type: "vertical",
-        x: 8 + i * 13,
-        thickness: i % 2 === 0 ? 3 : 2,
-        alpha: 0.32,
-      });
-    }
-
-    for (let i = 0; i < 5; i += 1) {
-      lines.push({
-        type: "horizontal",
-        y: 14 + i * 16,
-        thickness: i % 2 === 0 ? 3 : 2,
-        alpha: 0.28,
-      });
-    }
+  if (syncPalette && paletteSelect && paletteSelect.value !== artist.paletteKey) {
+    paletteSelect.value = artist.paletteKey;
   }
 
-  if (mode === "hybrid") {
-    for (let i = 0; i < 5; i += 1) {
-      lines.push({
-        type: "vertical",
-        x: 10 + i * 18,
-        thickness: 2,
-        alpha: 0.24,
-      });
-    }
-
-    for (let i = 0; i < 4; i += 1) {
-      lines.push({
-        type: "diagonal",
-        angle: i % 2 === 0 ? 34 : -34,
-        y: 12 + i * 21,
-        thickness: 2,
-        alpha: 0.24,
-      });
-    }
+  if (syncPoster) {
+    generatePoster();
   }
-
-  if (mode === "chaos") {
-    for (let i = 0; i < 10; i += 1) {
-      lines.push({
-        type: "diagonal",
-        angle: Math.round(rng() * 120 - 60),
-        y: Math.round(rng() * 100),
-        thickness: rng() > 0.62 ? 3 : 2,
-        alpha: 0.18 + rng() * 0.2,
-      });
-    }
-  }
-
-  lines.forEach((line) => {
-    const lineEl = document.createElement("div");
-    lineEl.className = "poster-line";
-    lineEl.style.background = `${palette.line}${Math.round(line.alpha * 255)
-      .toString(16)
-      .padStart(2, "0")}`;
-
-    if (line.type === "vertical") {
-      lineEl.style.left = `${line.x}%`;
-      lineEl.style.top = "0";
-      lineEl.style.width = `${line.thickness}px`;
-      lineEl.style.height = "100%";
-    }
-
-    if (line.type === "horizontal") {
-      lineEl.style.left = "0";
-      lineEl.style.top = `${line.y}%`;
-      lineEl.style.height = `${line.thickness}px`;
-      lineEl.style.width = "100%";
-    }
-
-    if (line.type === "diagonal") {
-      lineEl.style.left = "-8%";
-      lineEl.style.top = `${line.y}%`;
-      lineEl.style.width = "116%";
-      lineEl.style.height = `${line.thickness}px`;
-      lineEl.style.transform = `rotate(${line.angle}deg)`;
-      lineEl.style.transformOrigin = "left center";
-    }
-
-    posterOutput.appendChild(lineEl);
-  });
-}
-
-function addPosterStamps(rng) {
-  const stampA = document.createElement("p");
-  stampA.className = "poster-stamp poster-stamp-a";
-  stampA.textContent = rng() > 0.5 ? "playful contour" : "grain + doodle";
-
-  const stampB = document.createElement("p");
-  stampB.className = "poster-stamp poster-stamp-b";
-  stampB.textContent = rng() > 0.5 ? "patchwork mood" : "illustration flow";
-
-  posterOutput.appendChild(stampA);
-  posterOutput.appendChild(stampB);
-}
-
-function getThreeModeLabel(mode) {
-  if (mode === "pulse") {
-    return "Pulse Wave";
-  }
-
-  if (mode === "nova") {
-    return "Nova Storm";
-  }
-
-  return "Orbit Bloom";
 }
 
 function getThreeSceneConfig() {
@@ -375,9 +451,112 @@ async function setupThreeScene() {
   }
 }
 
+function buildPosterLines(mode, palette, rng) {
+  const lines = [];
+
+  if (mode === "strict") {
+    for (let index = 0; index < 8; index += 1) {
+      lines.push({
+        type: "vertical",
+        x: 8 + index * 11,
+        thickness: index % 2 === 0 ? 3 : 2,
+        alpha: 0.3,
+      });
+    }
+
+    for (let index = 0; index < 6; index += 1) {
+      lines.push({
+        type: "horizontal",
+        y: 10 + index * 14,
+        thickness: index % 2 === 0 ? 3 : 2,
+        alpha: 0.24,
+      });
+    }
+  }
+
+  if (mode === "hybrid") {
+    for (let index = 0; index < 5; index += 1) {
+      lines.push({
+        type: "vertical",
+        x: 10 + index * 18,
+        thickness: 2,
+        alpha: 0.22,
+      });
+    }
+
+    for (let index = 0; index < 5; index += 1) {
+      lines.push({
+        type: "diagonal",
+        angle: index % 2 === 0 ? 33 : -33,
+        y: 9 + index * 18,
+        thickness: 2,
+        alpha: 0.22,
+      });
+    }
+  }
+
+  if (mode === "chaos") {
+    for (let index = 0; index < 12; index += 1) {
+      lines.push({
+        type: "diagonal",
+        angle: Math.round(rng() * 128 - 64),
+        y: Math.round(rng() * 100),
+        thickness: rng() > 0.55 ? 3 : 2,
+        alpha: 0.16 + rng() * 0.2,
+      });
+    }
+  }
+
+  lines.forEach((line) => {
+    const lineElement = document.createElement("div");
+    lineElement.className = "poster-line";
+    lineElement.style.background = `${palette.line}${Math.round(line.alpha * 255)
+      .toString(16)
+      .padStart(2, "0")}`;
+
+    if (line.type === "vertical") {
+      lineElement.style.left = `${line.x}%`;
+      lineElement.style.top = "0";
+      lineElement.style.width = `${line.thickness}px`;
+      lineElement.style.height = "100%";
+    }
+
+    if (line.type === "horizontal") {
+      lineElement.style.left = "0";
+      lineElement.style.top = `${line.y}%`;
+      lineElement.style.height = `${line.thickness}px`;
+      lineElement.style.width = "100%";
+    }
+
+    if (line.type === "diagonal") {
+      lineElement.style.left = "-8%";
+      lineElement.style.top = `${line.y}%`;
+      lineElement.style.width = "116%";
+      lineElement.style.height = `${line.thickness}px`;
+      lineElement.style.transform = `rotate(${line.angle}deg)`;
+      lineElement.style.transformOrigin = "left center";
+    }
+
+    posterOutput.appendChild(lineElement);
+  });
+}
+
+function addPosterStamps(rng, palette) {
+  const stampA = document.createElement("p");
+  stampA.className = "poster-stamp poster-stamp-a";
+  stampA.textContent = rng() > 0.5 ? palette.stamps[0] : "archive proof";
+
+  const stampB = document.createElement("p");
+  stampB.className = "poster-stamp poster-stamp-b";
+  stampB.textContent = rng() > 0.5 ? palette.stamps[1] : "studio study";
+
+  posterOutput.appendChild(stampA);
+  posterOutput.appendChild(stampB);
+}
+
 function generatePoster() {
   const paletteKey = paletteSelect.value;
-  const palette = palettes[paletteKey];
+  const palette = palettes[paletteKey] ?? palettes.kamekura;
   const density = Number.parseInt(densityRange.value, 10);
   const mode = gridMode.value;
   const motionEnabled = motionToggle.checked;
@@ -386,16 +565,7 @@ function generatePoster() {
   const rng = makeRng(hashString(seedInput));
 
   densityValue.textContent = `${density} layers`;
-
-  const modeLabel =
-    mode === "strict"
-      ? "Patchwork Grid"
-      : mode === "hybrid"
-        ? "Balanced Chaos"
-        : "Wild Doodle Burst";
-  const threeLabel = getThreeModeLabel(threeMode?.value ?? "orbit");
-
-  outputMeta.textContent = `${palette.label} / ${density} layers / ${modeLabel} / ${threeLabel}`;
+  outputMeta.textContent = `${palette.label} / ${density} layers / ${getGridModeLabel(mode)} / ${getThreeModeLabel(threeMode?.value ?? "orbit")}`;
 
   posterOutput.innerHTML = "";
   posterOutput.style.background = palette.background;
@@ -404,18 +574,18 @@ function generatePoster() {
 
   const shapeTypes = ["circle", "ring", "bar", "diamond", "star", "blob"];
 
-  for (let i = 0; i < density; i += 1) {
+  for (let index = 0; index < density; index += 1) {
     const shape = document.createElement("div");
     const type = shapeTypes[Math.floor(rng() * shapeTypes.length)];
     const color = palette.accents[Math.floor(rng() * palette.accents.length)];
 
-    const width = 34 + Math.floor(rng() * 170);
+    const width = 36 + Math.floor(rng() * 188);
     const height =
       type === "bar"
-        ? 12 + Math.floor(rng() * 38)
+        ? 12 + Math.floor(rng() * 42)
         : type === "star"
           ? width
-          : 34 + Math.floor(rng() * 170);
+          : 36 + Math.floor(rng() * 188);
 
     const left = 8 + Math.floor(rng() * 84);
     const top = 8 + Math.floor(rng() * 84);
@@ -455,15 +625,15 @@ function generatePoster() {
     posterOutput.appendChild(shape);
   }
 
-  addPosterStamps(rng);
+  addPosterStamps(rng, palette);
 
   const caption = document.createElement("p");
   caption.className = "poster-caption";
-  caption.textContent = `${palette.caption} / Behance-inspired illustration texture translated into interactive UI.`;
+  caption.textContent = `${palette.caption}. This generated board translates historical logic into a contemporary interface study.`;
 
   const year = document.createElement("p");
   year.className = "poster-year";
-  year.textContent = `${1960 + Math.floor(rng() * 19)} EDITION`;
+  year.textContent = `${1955 + Math.floor(rng() * 30)} ARCHIVE`;
 
   posterOutput.appendChild(caption);
   posterOutput.appendChild(year);
@@ -576,13 +746,19 @@ function setupHeroParallax() {
   });
 }
 
-artistButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    setArtistSelection(button.dataset.artist);
-  });
-});
+if (paletteSelect) {
+  const syncPaletteSelection = () => {
+    if (artistData[paletteSelect.value]) {
+      setArtistSelection(paletteSelect.value, { syncPalette: false, syncPoster: false });
+    }
+    generatePoster();
+  };
 
-[paletteSelect, densityRange, gridMode, threeMode, motionToggle].forEach((control) => {
+  paletteSelect.addEventListener("input", syncPaletteSelection);
+  paletteSelect.addEventListener("change", syncPaletteSelection);
+}
+
+[densityRange, gridMode, threeMode, motionToggle].forEach((control) => {
   if (!control) {
     return;
   }
@@ -620,7 +796,8 @@ window.addEventListener("pagehide", () => {
   }
 });
 
-setArtistSelection("kamekura");
+buildLegendGrid();
+setArtistSelection("kamekura", { syncPalette: true, syncPoster: false });
 buildTimelineRail();
 renderTimeline(0);
 generatePoster();

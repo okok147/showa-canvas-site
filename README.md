@@ -1,19 +1,27 @@
 # Showa Spectrum
 
-A high-concept web experience inspired by 1960s-1970s Japanese graphic design.
+A responsive archive experience built from legendary Japanese graphic designers and art directors.
 
 ## What this build includes
 
 - Cinematic hero stage with layered geometric motion
 - Three.js-powered hero scene with live orbital animation modes
-- Interactive artist explorer (Kamekura, Tanaka, Yokoo, Awazu, Ishioka)
+- Reactive masters atlas covering:
+  - Yusaku Kamekura
+  - Ikko Tanaka
+  - Tadanori Yokoo
+  - Kiyoshi Awazu
+  - Eiko Ishioka
+  - Kazumasa Nagai
+  - Shigeo Fukuda
+  - Kohei Sugiura
 - Generative "Poster Lab" with live controls:
   - palette mode
   - shape density
   - layout logic
   - 3D motion mode
   - motion toggle
-- Timeline scrubber with key moments from 1960-1978
+- Timeline scrubber with key moments from 1956-1983
 - Source shelf linking primary museum/archive references
 - Responsive layout optimized for desktop and mobile
 

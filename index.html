@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Showa Spectrum | Illustration-Powered Interactive Experience</title>
+    <title>Showa Spectrum | Atlas of Legendary Japanese Graphic Design</title>
     <meta
       name="description"
-      content="An immersive UI inspired by expressive illustration systems: textured colors, doodle motifs, and interactive composition tools."
+      content="A living atlas of legendary Japanese graphic designers with a responsive archive UI, generative poster lab, and Three.js-powered motion system."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -51,24 +51,30 @@
     <main>
       <section class="scene hero" id="hero">
         <div class="hero-copy reveal">
-          <p class="kicker">Refactored with Ilustraciones VARIAS-inspired visual language</p>
+          <p class="kicker">Studied across museum collections, archive records, and graphic design history</p>
           <h1>
-            Wild colors.
-            <span>Hand-drawn energy.</span>
+            Legendary masters.
+            <span>One living archive.</span>
           </h1>
           <p class="hero-lede">
-            This experience now follows an illustration-first system: grainy textures,
-            bold contour lines, playful symbolic motifs, patchwork framing, and
-            dynamic composition controls that feel like a live sketchbook.
+            This redesign treats the site as a responsive museum of influence. It
+            studies Kamekura, Tanaka, Yokoo, Awazu, Ishioka, Nagai, Fukuda, and
+            Sugiura, then translates their visual logic into a single interactive
+            system for web, motion, and spatial composition.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-solid" href="#lab">Launch Poster Lab</a>
-            <a class="btn btn-outline" href="#artists">Explore Art Direction</a>
+            <a class="btn btn-solid" href="#artists">Enter The Atlas</a>
+            <a class="btn btn-outline" href="#lab">Open The Studio</a>
           </div>
           <div class="hero-stickers" aria-hidden="true">
-            <span>pink + orange + lime</span>
-            <span>rough outlines</span>
-            <span>symmetry + chaos</span>
+            <span>kamekura</span>
+            <span>tanaka</span>
+            <span>yokoo</span>
+            <span>awazu</span>
+            <span>ishioka</span>
+            <span>nagai</span>
+            <span>fukuda</span>
+            <span>sugiura</span>
           </div>
         </div>
 
@@ -89,38 +95,27 @@
           <div class="stage-icon icon-eye"></div>
           <div class="stage-icon icon-blob"></div>
 
-          <div class="stage-label stage-label-a">PATCHWORK</div>
-          <div class="stage-label stage-label-b">DOODLE ENERGY</div>
-          <div class="stage-label stage-label-c">TEXTURED COLOR</div>
-          <div class="stage-label stage-label-d">THREE.JS LIVE</div>
+          <div class="stage-label stage-label-a">TOKYO 1964</div>
+          <div class="stage-label stage-label-b">POSTER INTENSITY</div>
+          <div class="stage-label stage-label-c">GRAPHIC MEMORY</div>
+          <div class="stage-label stage-label-d">THREE.JS ARCHIVE</div>
         </aside>
       </section>
 
       <section class="scene artists" id="artists">
         <div class="section-head reveal">
-          <p class="kicker">Art Direction Board</p>
-          <h2>Switch Profiles And Read Their UI Translation</h2>
+          <p class="kicker">Masters Atlas</p>
+          <h2>Eight Legends, Eight Design Logics, One Reactive Interface</h2>
         </div>
+        <p class="section-intro reveal">
+          Each artist card maps historical work into interface behavior:
+          hierarchy, typography, symbol systems, color tension, spatial rhythm,
+          and motion tone. Selecting a card shifts the active theme for the
+          archive, the poster lab, and the 3D hero scene.
+        </p>
 
-        <div class="artist-explorer">
-          <div class="artist-list reveal" role="tablist" aria-label="Artist selector">
-            <button class="artist-trigger is-active" data-artist="kamekura" role="tab" aria-selected="true">
-              Yusaku Kamekura
-            </button>
-            <button class="artist-trigger" data-artist="tanaka" role="tab" aria-selected="false">
-              Ikko Tanaka
-            </button>
-            <button class="artist-trigger" data-artist="yokoo" role="tab" aria-selected="false">
-              Tadanori Yokoo
-            </button>
-            <button class="artist-trigger" data-artist="awazu" role="tab" aria-selected="false">
-              Kiyoshi Awazu
-            </button>
-            <button class="artist-trigger" data-artist="ishioka" role="tab" aria-selected="false">
-              Eiko Ishioka
-            </button>
-          </div>
-
+        <div class="legend-atlas">
+          <div class="legend-grid reveal" id="legendGrid" role="tablist" aria-label="Legendary artist selector"></div>
           <article class="artist-detail reveal" id="artistDetail" aria-live="polite">
             <p class="detail-era" id="artistEra"></p>
             <h3 id="artistName"></h3>
@@ -136,54 +131,57 @@
 
       <section class="scene lab" id="lab">
         <div class="section-head reveal">
-          <p class="kicker">Generative Playground</p>
-          <h2>Poster Lab: Build Live Illustration Compositions</h2>
+          <p class="kicker">Legendary Studio</p>
+          <h2>Poster Lab: Synthesize The Masters Into A New Composition</h2>
         </div>
 
         <div class="lab-shell">
           <form class="control-panel reveal" id="controlPanel">
             <h3>Art Direction Controls</h3>
 
-            <label for="paletteSelect">Palette Mood</label>
+            <label for="paletteSelect">Legendary Palette</label>
             <select id="paletteSelect" name="palette">
-              <option value="kamekura">Candy Patchwork</option>
-              <option value="tanaka">Turquoise Garden</option>
-              <option value="yokoo">Hot Pink Voltage</option>
-              <option value="awazu">Cocoa Folk Night</option>
-              <option value="ishioka">Blue Myth Frame</option>
+              <option value="kamekura">Yusaku Kamekura</option>
+              <option value="tanaka">Ikko Tanaka</option>
+              <option value="yokoo">Tadanori Yokoo</option>
+              <option value="awazu">Kiyoshi Awazu</option>
+              <option value="ishioka">Eiko Ishioka</option>
+              <option value="nagai">Kazumasa Nagai</option>
+              <option value="fukuda">Shigeo Fukuda</option>
+              <option value="sugiura">Kohei Sugiura</option>
             </select>
 
-            <label for="densityRange">Symbol Density</label>
+            <label for="densityRange">Form Density</label>
             <input type="range" id="densityRange" name="density" min="4" max="28" value="16" />
             <p class="control-note" id="densityValue">16 layers</p>
 
             <label for="gridMode">Composition Logic</label>
             <select id="gridMode" name="gridMode">
-              <option value="strict">Patchwork Grid</option>
-              <option value="hybrid">Balanced Chaos</option>
-              <option value="chaos">Wild Doodle Burst</option>
+              <option value="strict">Constructive Order</option>
+              <option value="hybrid">Hybrid Tension</option>
+              <option value="chaos">Psychedelic Collision</option>
             </select>
 
             <label for="threeMode">3D Motion Mode</label>
             <select id="threeMode" name="threeMode">
-              <option value="orbit">Orbit Bloom</option>
-              <option value="pulse">Pulse Wave</option>
-              <option value="nova">Nova Storm</option>
+              <option value="orbit">Orbit Monument</option>
+              <option value="pulse">Signal Pulse</option>
+              <option value="nova">Poster Nova</option>
             </select>
 
             <label class="switch" for="motionToggle">
               <input type="checkbox" id="motionToggle" checked />
-              <span>Enable floating motion</span>
+              <span>Enable motion system</span>
             </label>
 
-            <button type="button" class="btn btn-solid" id="regenerateBtn">Regenerate Artwork</button>
-            <button type="button" class="btn btn-outline btn-utility" id="threeResetBtn">Recenter 3D Camera</button>
+            <button type="button" class="btn btn-solid" id="regenerateBtn">Generate New Board</button>
+            <button type="button" class="btn btn-outline btn-utility" id="threeResetBtn">Reset 3D Camera</button>
           </form>
 
           <div class="lab-output reveal">
             <div class="output-header">
               <p class="output-title">Generated Board</p>
-              <p class="output-meta" id="outputMeta">Candy Patchwork / 16 layers / Patchwork Grid</p>
+              <p class="output-meta" id="outputMeta">Yusaku Kamekura / 16 layers / Constructive Order / Orbit Monument</p>
             </div>
             <div class="poster-output" id="posterOutput" aria-live="polite"></div>
           </div>
@@ -192,12 +190,12 @@
 
       <section class="scene timeline" id="timeline">
         <div class="section-head reveal">
-          <p class="kicker">Narrative Scrubber</p>
-          <h2>Slide Through Milestones And Mood Changes</h2>
+          <p class="kicker">Historical Lineage</p>
+          <h2>Slide Through Landmark Works And Shifts In Japanese Design</h2>
         </div>
 
         <div class="timeline-shell reveal">
-          <label for="timelineRange" class="timeline-label">Move across key moments</label>
+          <label for="timelineRange" class="timeline-label">Move across documented milestones</label>
           <input type="range" id="timelineRange" min="0" max="8" value="0" />
 
           <article class="timeline-feature" aria-live="polite">
@@ -212,44 +210,44 @@
 
       <section class="scene manifesto" id="manifesto">
         <div class="section-head reveal">
-          <p class="kicker">UX Refactor Rules</p>
-          <h2>What Changed In UI, UX, And Background</h2>
+          <p class="kicker">What The Masters Teach</p>
+          <h2>Design Principles Distilled Into Interface Rules</h2>
         </div>
 
         <div class="manifesto-grid">
           <article class="manifesto-card reveal">
-            <h3>01 Illustration-First Layout</h3>
+            <h3>01 Kamekura: Silence Carries Force</h3>
             <p>
-              Interfaces now read like artboards: layered blocks, vivid color zones,
-              and deliberate visual storytelling.
+              Give focal shapes breathing room and let emptiness do structural
+              work instead of crowding every surface.
             </p>
           </article>
           <article class="manifesto-card reveal">
-            <h3>02 Hand-Drawn Texture System</h3>
+            <h3>02 Tanaka: Tradition Can Be Systemic</h3>
             <p>
-              Grain overlays, rough borders, and doodle motifs replace sterile
-              gradients and flat geometry.
+              Historic visual language becomes sharper when translated through
+              repeatable modules and disciplined spacing.
             </p>
           </article>
           <article class="manifesto-card reveal">
-            <h3>03 Functional Creative Controls</h3>
+            <h3>03 Yokoo: Saturation Needs Narrative</h3>
             <p>
-              Every control impacts generated output directly: palette, density,
-              structure, motion, and re-seeding.
+              Density, collage, and contradiction only work when the interface
+              still gives the eye a clear story to follow.
             </p>
           </article>
           <article class="manifesto-card reveal">
-            <h3>04 Strong Readability</h3>
+            <h3>04 Nagai + Fukuda: Symbols Must Think</h3>
             <p>
-              Despite expressive visuals, hierarchy is explicit and interactions stay
-              predictable on desktop and mobile.
+              Visual wit is not garnish. Forms should compress meaning, not
+              merely decorate the page.
             </p>
           </article>
           <article class="manifesto-card reveal">
-            <h3>05 Background As Experience</h3>
+            <h3>05 Ishioka + Sugiura: Editorial Space Is Emotional</h3>
             <p>
-              The background is now an active design layer with symbolic doodles,
-              depth cues, and rhythm across sections.
+              Typography, color, and spatial framing should feel authored,
+              persuasive, and unmistakably intentional.
             </p>
           </article>
         </div>
@@ -258,25 +256,27 @@
       <section class="scene references" id="references">
         <div class="section-head reveal">
           <p class="kicker">Reference Shelf</p>
-          <h2>Primary Sources Behind The Visual Language</h2>
+          <h2>Primary Museum And Archive Sources Used For This Redesign</h2>
         </div>
 
         <ol class="source-list reveal">
           <li><a href="https://www.moma.org/collection/works/8780" target="_blank" rel="noreferrer">MoMA: Yusaku Kamekura, Tokyo 1964 (1962)</a></li>
           <li><a href="https://www.britishmuseum.org/collection/object/A_2009-3026-3" target="_blank" rel="noreferrer">British Museum: Tokyo 1964 butterfly swimmer poster</a></li>
           <li><a href="https://www.moma.org/collection/works/82808" target="_blank" rel="noreferrer">MoMA: Ikko Tanaka, Let&apos;s Take Away Violence from Our Streets (1960)</a></li>
-          <li><a href="https://www.sfmoma.org/artist/Tadanori_Yokoo/" target="_blank" rel="noreferrer">SFMOMA: Tadanori Yokoo biography and Persona-era context</a></li>
-          <li><a href="https://www.moma.org/collection/works/7953" target="_blank" rel="noreferrer">MoMA: Tadanori Yokoo, Made in Japan... (1965)</a></li>
-          <li><a href="https://www.mplus.org.hk/en/collection/objects/poster-the-work-of-kisho-kurokawa-capsule-metabolism-spaceframe-metamorphose-2016727/" target="_blank" rel="noreferrer">M+: Awazu Kiyoshi and Metabolism poster culture (1970)</a></li>
-          <li><a href="https://www.moma.org/collection/works/5858" target="_blank" rel="noreferrer">MoMA: Kiyoshi Awazu, Osai-Gonza theatrical poster (1973)</a></li>
-          <li><a href="https://www.cooperhewitt.org/2014/03/17/the-theater-very-parco/" target="_blank" rel="noreferrer">Cooper Hewitt: Eiko Ishioka and Parco campaign history</a></li>
-          <li><a href="https://www.behance.net/gallery/241587283/Ilustraciones-VARIAS" target="_blank" rel="noreferrer">Behance: Ilustraciones VARIAS by Saio Alvarez</a></li>
+          <li><a href="https://www.sfmoma.org/artist/Tadanori_Yokoo/" target="_blank" rel="noreferrer">SFMOMA: Tadanori Yokoo artist page</a></li>
+          <li><a href="https://www.moma.org/collection/works/7953" target="_blank" rel="noreferrer">MoMA: Tadanori Yokoo, Made in Japan...</a></li>
+          <li><a href="https://www.mplus.org.hk/en/collection/objects/poster-the-work-of-kisho-kurokawa-capsule-metabolism-spaceframe-metamorphose-2016727/" target="_blank" rel="noreferrer">M+: Kiyoshi Awazu and Metabolism poster context</a></li>
+          <li><a href="https://www.moma.org/collection/works/5858" target="_blank" rel="noreferrer">MoMA: Kiyoshi Awazu theatrical poster</a></li>
+          <li><a href="https://www.cooperhewitt.org/2014/03/17/the-theater-very-parco/" target="_blank" rel="noreferrer">Cooper Hewitt: Eiko Ishioka and Parco</a></li>
+          <li><a href="https://www.mplus.org.hk/en/collection/makers/kazumasa-nagai-5738/" target="_blank" rel="noreferrer">M+: Kazumasa Nagai maker page</a></li>
+          <li><a href="https://www.moma.org/artists/2009-shigeo-fukuda" target="_blank" rel="noreferrer">MoMA: Shigeo Fukuda artist page</a></li>
+          <li><a href="https://www.dnpfcp.jp/gallery/ggg/eng/75/" target="_blank" rel="noreferrer">ggg archive: Kohei Sugiura exhibition record</a></li>
         </ol>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Showa Spectrum / refactored with illustration-driven UI + UX + background system</p>
+      <p>Showa Spectrum / redesigned as a living atlas of legendary Japanese graphic design</p>
     </footer>
 
     <script src="script.js"></script>
